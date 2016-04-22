@@ -1,21 +1,94 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<widget xmlns		= "http://www.w3.org/ns/widgets"
-	xmlns:gap	= "http://phonegap.com/ns/1.0"
-	id		= "com.example.vaadinwrapped"
-	version 	= "0.0.1">
-
-	<name>aardvark</name>
-    <author email="toni.virta@bluecrossmn.com">
-        Toni Virta
+<!DOCTYPE widget>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0"
+        id="com.bcbsmn.aardvark" version="{VERSION}" versionCode="{RELEASE}">
+    <name>aardvark</name>
+    <description xml:lang="en"><![CDATA[
+An application that does nothing, but in a complicated way
+]]>
+    </description>
+    <author href="http://www.example.com">
+        Example Corp, LLC
     </author>
-	<description>
-		An application that does nothing, but in a complicated way
-	</description>
-    <icon src="aardvark.png" gap:role="default" />
+    <license>
+        Copyright 2014, Example Corp, LLC
+    </license>
+
+    <gap:platform name="android"/>
+    <gap:platform name="ios"/>
     
-	<access origin="*" />
-    <gap:plugin name="org.apache.cordova.network-information" version="0.2.7" />
-    <gap:plugin name="org.apache.cordova.splashscreen" version="0.2.7" />
-    <gap:plugin name="com.phonegap.plugin.statusbar" version="1.1.0" />
+    <gap:plugin name="com.phonegap.plugin.statusbar" />
+    <gap:plugin name="org.apache.cordova.network-information" />
+    <gap:plugin name="org.apache.cordova.splashscreen" />
     <feature name="org.apache.cordova.network-information" />
+
+    <icon src="res/ios/icon-57.png"       gap:platform="ios" width="57"  height="57"  />
+    <icon src="res/ios/icon-57_at_2x.png" gap:platform="ios" width="114" height="114" />
+    <icon src="res/ios/icon-72.png"       gap:platform="ios" width="72"  height="72"  />
+    <icon src="res/ios/icon-72_at_2x.png" gap:platform="ios" width="144" height="144" />
+    <icon src="res/ios/icon-76.png"       gap:platform="ios" width="76"  height="76"  />
+    <icon src="res/ios/icon-76_at_2x.png" gap:platform="ios" width="152" height="152" />
+    <icon src="res/ios/icon-120.png"      gap:platform="ios" width="120" height="120" />
+
+    <icon src="res/android/icon-36-ldpi.png"  gap:platform="android" width="36" height="36" gap:density="ldpi"/>
+    <icon src="res/android/icon-48-mdpi.png"  gap:platform="android" width="48" height="48" gap:density="mdpi"/>
+    <icon src="res/android/icon-72-hdpi.png"  gap:platform="android" width="72" height="72" gap:density="hdpi"/>
+    <icon src="res/android/icon-96-xhdpi.png" gap:platform="android" width="96" height="96" gap:density="xhdpi"/>
+    <icon src="res/android/icon-96-xxhdpi.png" gap:platform="android" width="96" height="96" gap:density="xxhdpi"/>
+
+    <gap:splash src="res/ios/Default.png"              gap:platform="ios" width="320"  height="480" />
+    <gap:splash src="res/ios/Default@2x.png"           gap:platform="ios" width="640"  height="960" />
+    <gap:splash src="res/ios/Default_iphone5.png"      gap:platform="ios" width="640"  height="1136"/>
+    <gap:splash src="res/ios/Default-Landscape.png"    gap:platform="ios" width="1024" height="768" />
+    <gap:splash src="res/ios/Default-Portrait.png"     gap:platform="ios" width="768"  height="1004"/>
+    <gap:splash src="res/ios/Default-568h.png"         gap:platform="ios" width="320"  height="568" />
+    <gap:splash src="res/ios/Default-568@2x.png"       gap:platform="ios" width="640"  height="1136"/>
+    <gap:splash src="res/ios/Default-Landscape@2x.png" gap:platform="ios" width="2048" height="1496"/>
+    <gap:splash src="res/ios/Default-Portrait@2x.png"  gap:platform="ios" width="1536" height="2008"/>
+
+    <gap:splash src="res/android/splash-ldpi.9.png"  gap:platform="android" gap:density="ldpi" />
+    <gap:splash src="res/android/splash-mdpi.9.png"  gap:platform="android" gap:density="mdpi" />
+    <gap:splash src="res/android/splash-hdpi.9.png"  gap:platform="android" gap:density="hdpi" />
+    <gap:splash src="res/android/splash-xhdpi.9.png" gap:platform="android" gap:density="xhdpi"/>
+
+    <!-- PhoneGap version to use --> 
+    <preference name="phonegap-version" value="3.4.0" />
+
+    <!-- Allow landscape and portrait orientations -->
+    <preference name="Orientation" value="default" />
+    
+    <!-- Don't allow overscroll effects (bounce-back on iOS, glow on Android. 
+         Not useful since app doesn't scroll. -->
+    <preference name="DisallowOverscroll" value="true"/>
+    
+    <!-- Don't hide the O/S's status bar -->
+    <preference name="fullscreen" value="false" />
+
+    <!-- iOS: Obey the app's viewport meta tag -->
+    <preference name="EnableViewportScale" value="true"/>
+    
+    <!-- iOS: if set to true, app will terminate when home button is pressed -->
+    <preference name="exit-on-suspend" value="false" />
+
+    <!-- iOS: If icon is prerendered, iOS will not apply it's gloss to the app's icon on the user's home screen -->
+    <preference name="prerendered-icon" value="false" />
+
+    <!-- iOS: if set to false, the splash screen must be hidden using a JavaScript API -->
+    <preference name="AutoHideSplashScreen" value="false" />
+
+    <!-- iOS: MinimumOSVersion -->
+    <preference name="deployment-target" value="6.0" />
+
+    <!-- Android: Keep running in the background -->
+    <preference name="KeepRunning" value="true"/>
+    
+    <!-- Android: Web resource load timeout, ms -->
+    <preference name="LoadUrlTimeoutValue" value="30000"/>
+    
+    <!-- Android: The amount of time the splash screen image displays (if not hidden by app) -->
+    <preference name="SplashScreenDelay" value="3000"/>
+    
+    <!-- Android: Minimum (4.0) and target (4.4) API versions -->
+    <preference name="android-minSdkVersion" value="14"/>
+    <preference name="android-targetSdkVersion" value="19"/>
 </widget>
