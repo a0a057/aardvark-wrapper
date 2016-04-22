@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html manifest="./VAADIN/widgetsets/com.example.exampleapp.widgetset.ExampleappWidgetset/safari.manifest">
+<html manifest="./VAADIN/widgetsets/com.bcbsmn.aardvark.widgetset.AardvarkWidgetset/safari.manifest">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=10;chrome=1" />
@@ -24,9 +24,9 @@ if (typeof window.__gwtStatsEvent != 'function') {
 vaadin.gwtStatsEvents = [];
 window.__gwtStatsEvent = function(event) {vaadin.gwtStatsEvents.push(event); return true;};
 }
-vaadin.initApplication("VaadinApp",{
-	"browserDetailsUrl": "http://jarno.app.fi/Example/App",
-	"serviceUrl": "http://jarno.app.fi/Example/App",
+vaadin.initApplication("aardvark",{
+	"browserDetailsUrl": "ec2-52-35-25-34.us-west-2.compute.amazonaws.com",
+	"serviceUrl": "ec2-52-35-25-34.us-west-2.compute.amazonaws.com",
     "authErrMsg": {
         "caption": "Authentication problem",
         "message": "Take note of any unsaved data, and <u>click here<\/u> to continue."
@@ -38,8 +38,8 @@ vaadin.initApplication("VaadinApp",{
     "standalone": false,
     "theme": "exampleapp",
     "vaadinDir": "./VAADIN/",
-    "versionInfo": {"vaadinVersion": "7.2.2"},
-    "widgetset": "com.example.exampleapp.widgetset.ExampleappWidgetset",
+    "versionInfo": {"vaadinVersion": "7.6.5"},
+    "widgetset": "com.bcbsmn.aardvark.widgetset.AardvarkWidgetset",
 });
 //]]></script>
 </body>
