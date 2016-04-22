@@ -28,14 +28,14 @@ An application that does nothing, but in a complicated way
     <icon src="res/ios/icon-72_at_2x.png" gap:platform="ios" width="144" height="144" />
     <icon src="res/ios/icon-76.png"       gap:platform="ios" width="76"  height="76"  />
     <icon src="res/ios/icon-76_at_2x.png" gap:platform="ios" width="152" height="152" />
-    <icon src="res/ios/icon-120.png"      gap:platform="ios" width="120" height="120" /> -->
-    <icon src="icon.png" gap:role="default" />
+    <icon src="res/ios/icon-120.png"      gap:platform="ios" width="120" height="120" />
 
     <icon src="res/android/icon-36-ldpi.png"  gap:platform="android" width="36" height="36" gap:density="ldpi"/>
     <icon src="res/android/icon-48-mdpi.png"  gap:platform="android" width="48" height="48" gap:density="mdpi"/>
     <icon src="res/android/icon-72-hdpi.png"  gap:platform="android" width="72" height="72" gap:density="hdpi"/>
     <icon src="res/android/icon-96-xhdpi.png" gap:platform="android" width="96" height="96" gap:density="xhdpi"/>
-    <icon src="res/android/icon-96-xxhdpi.png" gap:platform="android" width="96" height="96" gap:density="xxhdpi"/>
+    <icon src="res/android/icon-96-xxhdpi.png" gap:platform="android" width="96" height="96" gap:density="xxhdpi"/> -->
+    <icon src="icon.png" gap:role="default" />
 
     <gap:splash src="res/ios/Default.png"              gap:platform="ios" width="320"  height="480" />
     <gap:splash src="res/ios/Default@2x.png"           gap:platform="ios" width="640"  height="960" />
@@ -53,7 +53,7 @@ An application that does nothing, but in a complicated way
     <gap:splash src="res/android/splash-xhdpi.9.png" gap:platform="android" gap:density="xhdpi"/>
 
     <!-- PhoneGap version to use --> 
-    <!-- <preference name="phonegap-version" value="3.4.0" /> -->
+    <preference name="phonegap-version" value="3.4.0" />
 
     <!-- Allow landscape and portrait orientations -->
     <preference name="Orientation" value="default" />
