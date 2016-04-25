@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE widget>
 <widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0"
-        id="com.bcbsmn.aardvark" version="{VERSION}" versionCode="{RELEASE}">
+        id="com.bcbsmn.aardvark" version="0.0.1" versionCode="1">
     <name>aardvark</name>
     <description xml:lang="en"><![CDATA[
 An application that does nothing, but in a complicated way
