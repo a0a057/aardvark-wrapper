@@ -52,6 +52,8 @@ An application that does nothing, but in a complicated way
     <gap:splash src="res/android/splash-hdpi.9.png"  gap:platform="android" gap:density="hdpi" />
     <gap:splash src="res/android/splash-xhdpi.9.png" gap:platform="android" gap:density="xhdpi"/>
 -->
+    <!-- PhoneGap version to use --> 
+    <preference name="phonegap-version" value="cli-6.0.0" />
 
     <!-- Allow landscape and portrait orientations -->
     <preference name="Orientation" value="default" />
