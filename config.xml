@@ -15,7 +15,7 @@ An application that does nothing, but in a complicated way
     </license>
 
     <gap:platform name="android"/>
-    <gap:platform name="ios"/>
+    <!-- <gap:platform name="ios"/> -->
     
     <gap:plugin name="com.phonegap.plugin.statusbar" />
     <gap:plugin name="org.apache.cordova.network-information" />
