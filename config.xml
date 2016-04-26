@@ -20,7 +20,6 @@ An application that does nothing, but in a complicated way
     <gap:plugin name="com.phonegap.plugin.statusbar" />
     <gap:plugin name="org.apache.cordova.network-information" />
     <gap:plugin name="org.apache.cordova.splashscreen" />
-    <feature name="org.apache.cordova.network-information" />
 
     <icon src="res/ios/icon-57.png"       gap:platform="ios" width="57"  height="57"  />
     <icon src="res/ios/icon-57_at_2x.png" gap:platform="ios" width="114" height="114" />
